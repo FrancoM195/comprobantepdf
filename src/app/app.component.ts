@@ -99,7 +99,7 @@ doc.text ('Nro Doc.', 135, 50);
 doc.text ('Sit. IVA',135, 55);
 doc.text ('Cond. Vta.', 135, 60);
 
-doc.text ('0001 - Consumidor Final1', 37, 50);
+doc.text ('0001 - Consumidor Final:', 37, 50);
 doc.text ('Domicilio', 37, 55);
 doc.text ('JAMES CRAIK', 37, 60);
 doc.text ('00000000', 155, 50);
