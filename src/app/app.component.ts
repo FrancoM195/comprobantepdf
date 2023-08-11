@@ -16,12 +16,31 @@ export class AppComponent implements OnInit {
 
   Actualizar(){
     const doc = this.documento;
+    const pageHeight = doc.internal.pageSize.height || doc.internal.pageSize.getHeight();
+    const pageWidth = doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
+    console.log(pageHeight + ',' + pageWidth);
 
-    const pageHeight =
-    doc.internal.pageSize.height || doc.internal.pageSize.getHeight();
-  const pageWidth =
-    doc.internal.pageSize.width || doc.internal.pageSize.getWidth();
-  console.log(pageHeight + ',' + pageWidth);
+    const venta: any = {
+      id: 1,      
+      letra: 'B',
+      ptovta: 2,
+      nrocom: 3,
+      nombrecliente: 'Marcelo Negroni',
+      descripcion: "bien1",
+      cantidad: 1,
+      preciounit: 0,
+      subtotal: 0,
+      iva: 0,
+      aliiva: 21,
+      ventaId: 21,
+      bienId: "1",
+      bien: {
+          id: "1",
+          nombre: "Papas",
+          precioiva: 100,
+          stock: 0
+      }
+  };
 
   // // page 1
 
@@ -51,7 +70,9 @@ doc.setFontSize(13);
 doc.text ('Marcelo Nigro', 35, 16);
 doc.text ('Factura', 145, 16);
 doc.setFontSize(14);
-doc.text ('C',  100, 14.5, { align: 'center' });
+//`VentaId:${venta.id}`
+//doc.text ('C',  100, 14.5, { align: 'center' });
+doc.text (venta.letra,  100, 14.5, { align: 'center' });
 doc.setFontSize(6);
 doc.text ('CÓD. 11', 100, 18, { align: 'center' });
 doc.setFontSize(9);
