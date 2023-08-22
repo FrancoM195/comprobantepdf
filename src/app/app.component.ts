@@ -324,7 +324,6 @@ doc.line (pageWidth - 10, 5, pageWidth - 10, 250) ;
       return bytes.buffer;
     }
 
-
     GenerarPDF(){
         this.documento.save("comprobante.pdf");
     }
@@ -332,8 +331,5 @@ doc.line (pageWidth - 10, 5, pageWidth - 10, 250) ;
     ngOnInit() {
       this.Actualizar();
     }
-
-
-
 
 }
