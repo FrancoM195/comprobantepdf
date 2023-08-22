@@ -46,7 +46,6 @@ export class AppComponent implements OnInit {
 
 // ENCABEZADO Y MARCO 
 
-
 doc.setFont('helvetica', 'bold');
 doc.setFontSize (6);
 doc.text('Original', 100, 8, { align: 'center' });
@@ -59,7 +58,6 @@ doc.line (pageWidth - 10, 5, pageWidth - 10, 250) ;
 
 doc.line (100, 19, 100, 45);
 doc.rect (90, 9, 20, 10);
-
 
 // DATOS VENDEDOR
 
@@ -86,10 +84,7 @@ doc.text ('Domicilio', 47, 29);
 doc.text ('Responsable / Monotributo', 47, 34);
 doc.text ('353-0000000', 47, 39);
 
-
-
 // PARTE FACTURA
-
 
 doc.text ('Pto.Vta.'     , 132, 24);
 doc.text ('Comp', 162, 24);
@@ -108,8 +103,6 @@ doc.text ('01/01/2000', 132, 44);
 
 doc.line (10, 45, pageWidth - 10, 45);
 
-
-
 // datos del cliente
 
 doc.text ('Cliente', 12, 50);
@@ -127,7 +120,6 @@ doc.text ('IVA Consumidor Final',155, 55);
 doc.text ('Contado', 155, 60);
 
 doc.line (10, 62.5, pageWidth - 10, 62.5);
-
 
 // ENCABEZADO VENTA
 
@@ -192,6 +184,7 @@ doc.line (10, 215, 200, 215 )
 doc.line (100, 250, 100, 215)
 
 doc.addImage("https://previews.123rf.com/images/vinntom/vinntom1202/vinntom120200028/12430323-c%C3%B3digo-qr.jpg", "jpg", 12,218,28,28);
+
 
 
 doc.addPage ("a4", "landscape");
@@ -292,6 +285,7 @@ doc.text('0.00', 65, 78, { align: 'right'} );
 doc.text('2142.17', 155, 73, { align: 'right'} );
 doc.text('0.00', 155, 78, { align: 'right'} );
 doc.text('12343.00', 230, 73, { align: 'right'} );
+
 
 /*
 // MARCO 
